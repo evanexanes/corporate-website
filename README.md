@@ -39,7 +39,7 @@ A four-page company site: Home, About, Services and Contact. The text is placeho
 ## What this repository is
 A static copy of the WordPress site, exported with Simply Static so it can run on GitHub Pages. It is generated HTML, CSS and JavaScript, not the WordPress source: there is no PHP, database or `wp-config.php` here.
 
-Because the files are generated, they carry no source headers and are not meant to be edited by hand. To change the site, change it in WordPress and export it again.
+Each exported page opens with a documentation header (program name, description, author and a history table). The files are generated, so they are not meant to be edited by hand: change the site in WordPress, export it again and add a history row. The page list, theme and plugins are in [docs/DOCUMENTATION.md](docs/DOCUMENTATION.md).
 
 ## What works in the static copy
 GitHub Pages cannot run PHP, so anything that needs the WordPress server does not work in this copy. The contact form sends through Web3Forms instead of Contact Form 7.
