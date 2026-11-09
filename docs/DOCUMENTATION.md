@@ -42,9 +42,14 @@ history table. 7 pages.
 3. A re-export overwrites the pages and removes their headers. Put the header back and add a history
    row with the date, a description of 32 characters or fewer, and `EPPE`.
 
+## Images
+
+The pictures under `wp-content/uploads/` are WebP files named after the original, for example `team3.jpeg.webp`, and every page points at them. This cut the uploaded images from 14.7 MB to 8.7 MB and the pictures on the home page from about 878 KiB to about 390 KiB. Seven images stayed as they were because WebP was not clearly smaller. Files inside `wp-content/plugins/` and the theme are third-party and were left as they were. A re-export from WordPress brings the original PNG and JPEG files back, so convert them again after exporting.
+
 ## Change history
 
 | Date | Description | Programmer name |
 |---|---|---|
 | 09/28/2026 | Initial Implementation | EPPE |
 | 11/10/2026 | Added file headers and docs | EPPE |
+| 11/10/2026 | Converted images to WebP | EPPE |
